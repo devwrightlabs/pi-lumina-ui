@@ -1,0 +1,46 @@
+{
+  "name": "@devright/pi-lumina-ui",
+  "version": "0.1.0",
+  "description": "Premium Spatial UI kit for Pi Network native mobile webviews.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "npm run typecheck",
+    "test": "echo \"No test suite is configured for this repository yet.\""
+  },
+  "keywords": [
+    "pi-network",
+    "react",
+    "ui-kit",
+    "typescript",
+    "mobile-webview"
+  ],
+  "license": "MIT",
+  "sideEffects": false,
+  "peerDependencies": {
+    "framer-motion": ">=10.0.0",
+    "react": ">=18.2.0",
+    "react-dom": ">=18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "tsup": "^8.2.4",
+    "typescript": "^5.6.2"
+  }
+}
